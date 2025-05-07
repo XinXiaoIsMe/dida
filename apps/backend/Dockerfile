@@ -9,7 +9,7 @@ COPY package*.json ./
 
 # 安装依赖
 RUN npm install -g pnpm@7.17.0
-Run pnpm install --prod
+RUN pnpm install --prod
 
 # 复制项目文件到工作目录
 COPY . .

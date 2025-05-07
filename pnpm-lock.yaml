@@ -160,6 +160,79 @@ importers:
       vue-router-mock: 0.2.0_lavcef455lp3wtm2mcdrwhgymm
       vue-tsc: 1.0.24_typescript@4.9.5
 
+  apps/frontend-study:
+    specifiers:
+      '@iconify-json/carbon': ^1.1.13
+      '@iconify-json/mdi': ^1.1.41
+      '@iconify/vue': ^4.0.2
+      '@imengyu/vue3-context-menu': ^1.1.10
+      '@pinia/testing': ^0.1.2
+      '@types/lodash-es': ^4.17.6
+      '@unocss/reset': ^0.48.3
+      '@vitejs/plugin-vue': ^4.0.0
+      '@vitejs/plugin-vue-jsx': ^3.0.0
+      '@vitest/coverage-c8': ^0.28.4
+      '@vue/test-utils': ^2.2.10
+      '@vueuse/core': ^9.10.0
+      axios: ^1.4.0
+      axios-mock-adapter: ^1.21.5
+      cross-env: ^7.0.3
+      dexie: ^3.2.2
+      fake-indexeddb: ^4.0.2
+      flush-promises: ^1.0.2
+      fuse.js: ^6.6.2
+      happy-dom: 11.0.2
+      ink-mde: ^0.18.1
+      lodash-es: ^4.17.21
+      naive-ui: ^2.34.3
+      pinia: ^2.0.28
+      typescript: ^4.9.5
+      unocss: ^0.48.3
+      vite: 4.4.9
+      vitest: 0.34.4
+      vue: ^3.2.45
+      vue-router: 4.1.6
+      vue-router-mock: ^0.2.0
+      vue-tsc: ^1.0.24
+      vue3-emoji-picker: ^1.1.7
+      vuedraggable: ^4.1.0
+    dependencies:
+      '@imengyu/vue3-context-menu': 1.2.2
+      axios: 1.4.0
+      dexie: 3.2.2
+      fuse.js: 6.6.2
+      ink-mde: 0.18.1_vue@3.2.47
+      lodash-es: 4.17.21
+      naive-ui: 2.34.3_vue@3.2.47
+      pinia: 2.0.30_hmuptsblhheur2tugfgucj7gc4
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
+      vue3-emoji-picker: 1.1.7
+      vuedraggable: 4.1.0_vue@3.2.47
+    devDependencies:
+      '@iconify-json/carbon': 1.1.14
+      '@iconify-json/mdi': 1.1.46
+      '@iconify/vue': 4.1.0_vue@3.2.47
+      '@pinia/testing': 0.1.2_pinia@2.0.30+vue@3.2.47
+      '@types/lodash-es': 4.17.6
+      '@unocss/reset': 0.48.5
+      '@vitejs/plugin-vue': 4.0.0_vite@4.4.9+vue@3.2.47
+      '@vitejs/plugin-vue-jsx': 3.0.0_vite@4.4.9+vue@3.2.47
+      '@vitest/coverage-c8': 0.28.4_happy-dom@11.0.2
+      '@vue/test-utils': 2.2.10_vue@3.2.47
+      '@vueuse/core': 9.12.0_vue@3.2.47
+      axios-mock-adapter: 1.21.5_axios@1.4.0
+      cross-env: 7.0.3
+      fake-indexeddb: 4.0.2
+      flush-promises: 1.0.2
+      happy-dom: 11.0.2
+      typescript: 4.9.5
+      unocss: 0.48.5_vite@4.4.9
+      vite: 4.4.9
+      vitest: 0.34.4_happy-dom@11.0.2
+      vue-router-mock: 0.2.0_lavcef455lp3wtm2mcdrwhgymm
+      vue-tsc: 1.0.24_typescript@4.9.5
+
   apps/teach-frontend:
     specifiers:
       '@iconify-json/carbon': ^1.1.13
@@ -2477,7 +2550,6 @@ packages:
 
   /@types/node/20.4.5:
     resolution: {integrity: sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==}
-    dev: true
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -2537,7 +2609,7 @@ packages:
   /@types/whatwg-url/8.2.2:
     resolution: {integrity: sha512-FtQu10RWgn3D9U4aazdwIE2yzphmTJREDqNdODHrbrZmmMqI0vMheC/6NE/J1Yveaj8H+ela+YwWTjq5PGmuhA==}
     dependencies:
-      '@types/node': 18.13.0
+      '@types/node': 20.4.5
       '@types/webidl-conversions': 7.0.0
     dev: false
 
@@ -2873,6 +2945,7 @@ packages:
       - happy-dom
       - jsdom
       - less
+      - lightningcss
       - sass
       - stylus
       - sugarss
@@ -3145,7 +3218,7 @@ packages:
       '@types/web-bluetooth': 0.0.16
       '@vueuse/metadata': 9.12.0
       '@vueuse/shared': 9.12.0_vue@3.2.47
-      vue-demi: 0.13.11_vue@3.2.47
+      vue-demi: 0.14.5_vue@3.2.47
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -4393,6 +4466,7 @@ packages:
 
   /domexception/1.0.1:
     resolution: {integrity: sha512-raigMkn7CJNNo6Ihro1fzG7wr3fHuYVytzquZKX5n0yizGsTcYgzdIUwj1X9pK0VvjeihV+XiclP+DjwbsSKug==}
+    deprecated: Use your platform's native DOMException instead
     dependencies:
       webidl-conversions: 4.0.2
     dev: true
@@ -7479,15 +7553,6 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /postcss/8.4.26:
-    resolution: {integrity: sha512-jrXHFF8iTloAenySjM/ob3gSj7pCu0Ji49hnjqzsgSRa50hkWCKD0HQ+gMNJkW38jBI68MpAAg7ZWwHwX8NMMw==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.6
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-    dev: true
-
   /postcss/8.4.29:
     resolution: {integrity: sha512-cbI+jaqIeu/VGqXEarWkRCCffhjgXc0qjBtXpqJhTBohMUjUQnbBr0xqX3vEKudc4iviTewcJo5ajcec5+wdJw==}
     engines: {node: ^10 || ^12 || >=14}
@@ -7830,14 +7895,6 @@ packages:
 
   /rollup/3.14.0:
     resolution: {integrity: sha512-o23sdgCLcLSe3zIplT9nQ1+r97okuaiR+vmAPZPTDYB7/f3tgWIYNyiQveMsZwshBT0is4eGax/HH83Q7CG+/Q==}
-    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
-  /rollup/3.26.3:
-    resolution: {integrity: sha512-7Tin0C8l86TkpcMtXvQu6saWH93nhG3dGQ1/+l5V2TDMceTxO7kDiK6GzbfLWNNxqJXm591PcEZUozZm51ogwQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -8997,31 +9054,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.4.4_@types+node@18.13.0
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-    dev: true
-
-  /vite-node/0.28.4_@types+node@20.4.5:
-    resolution: {integrity: sha512-KM0Q0uSG/xHHKOJvVHc5xDBabgt0l70y7/lWTR7Q0pR5/MrYxadT+y32cJOE65FfjGmJgxpVEEY+69btJgcXOQ==}
-    engines: {node: '>=v14.16.0'}
-    hasBin: true
-    dependencies:
-      cac: 6.7.14
-      debug: 4.3.4
-      mlly: 1.4.0
-      pathe: 1.1.1
-      picocolors: 1.0.0
-      source-map: 0.6.1
-      source-map-support: 0.5.21
-      vite: 4.4.9_@types+node@20.4.5
+      vite: 4.4.9_@types+node@18.13.0
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -9085,42 +9118,6 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.14.0
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
-  /vite/4.4.4_@types+node@18.13.0:
-    resolution: {integrity: sha512-4mvsTxjkveWrKDJI70QmelfVqTm+ihFAb6+xf4sjEU2TmUCTlVX87tmg/QooPEMQb/lM9qGHT99ebqPziEd3wg==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      '@types/node': 18.13.0
-      esbuild: 0.18.15
-      postcss: 8.4.26
-      rollup: 3.26.3
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -9275,6 +9272,7 @@ packages:
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
+      - lightningcss
       - sass
       - stylus
       - sugarss
@@ -9325,11 +9323,12 @@ packages:
       tinybench: 2.5.0
       tinypool: 0.3.1
       tinyspy: 1.1.1
-      vite: 4.1.1_@types+node@18.13.0
+      vite: 4.4.9_@types+node@18.13.0
       vite-node: 0.28.4_@types+node@18.13.0
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
+      - lightningcss
       - sass
       - stylus
       - sugarss
@@ -9361,7 +9360,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
-      '@types/node': 20.4.5
+      '@types/node': 18.13.0
       '@vitest/expect': 0.28.4
       '@vitest/runner': 0.28.4
       '@vitest/spy': 0.28.4
@@ -9376,13 +9375,13 @@ packages:
       pathe: 1.1.1
       picocolors: 1.0.0
       source-map: 0.6.1
-      std-env: 3.3.2
+      std-env: 3.3.3
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.3.1
       tinyspy: 1.1.1
-      vite: 4.4.9_@types+node@20.4.5
-      vite-node: 0.28.4_@types+node@20.4.5
+      vite: 4.4.9_@types+node@18.13.0
+      vite-node: 0.28.4_@types+node@18.13.0
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
