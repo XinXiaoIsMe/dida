@@ -15,9 +15,8 @@ export default defineConfig({
     },
   },
   test: {
-    environment: 'happy-dom',
     globals: true,
-    setupFiles: path.resolve(__dirname, './vitest.setup.ts'),
+    environment: 'happy-dom',
   },
   plugins: [vueJsx(), vue(), Unocss()],
   resolve: {
