@@ -4,7 +4,7 @@
 // import { mount } from '@vue/test-utils'
 import { useGoto } from '../goto'
 import { RouteNames } from '@/router/const'
-import { useSetup } from '@/tests/helpers/mount'
+import { useSetup } from '@/tests/helpers'
 
 // 方法1：手动mock
 // vi.mock('vue-router')
