@@ -2,7 +2,7 @@
 // import { VueRouterMock, createRouterMock, injectRouterMock } from 'vue-router-mock'
 // import { config, mount } from '@vue/test-utils'
 // import { mount } from '@vue/test-utils'
-import { useGoto } from '../goto'
+import { GITHUB_URL, openGithub, useGoto } from '../goto'
 import { RouteNames } from '@/router/const'
 import { useSetup } from '@/tests/helpers'
 
@@ -103,5 +103,11 @@ describe('useGoto', () => {
     expect(router.push).toHaveBeenCalledWith({
       name: RouteNames.SETTINGS,
     })
+  })
+
+  it('should go to github', () => {
+    window.open = vi.fn()
+    openGithub()
+    expect(window.open).toHaveBeenCalledWith(GITHUB_URL)
   })
 })
